@@ -31,7 +31,38 @@
       <noscript>Please enable JavaScript to view the comments.</noscript>
     </div>
     {% endif %}
-
+    {% if CHANGYAN_APPID and CHANGYAN_CONF and SITEURL and article.status != "draft" %}
+    <div class="comments">
+      <div id="SOHUCS" sid="{{ article.url }}"></div>
+      <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+      <script type="text/javascript">
+      window.changyan.api.config({
+        appid: '{{ CHANGYAN_APPID }}',
+        conf: '{{ CHANGYAN_CONF }}'
+      });
+      </script>
+    </div>
+    {% endif %}
+    {% if DUOSHUO_SHORT_NAME and SITEURL and article.status != "draft" %}
+    <div class="comments">
+      <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="{{ article.url }}" data-title="{{ article.title }}" data-url="{{ SITEURL }}/{{ article.url }}"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+      <script type="text/javascript">
+        var duoshuoQuery = {short_name:"{{ DUOSHUO_SHORT_NAME }}"};
+      	(function() {
+      		var ds = document.createElement('script');
+      		ds.type = 'text/javascript';ds.async = true;
+      		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      		ds.charset = 'UTF-8';
+      		(document.getElementsByTagName('head')[0]
+      		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+      	})();
+      	</script>
+      <!-- 多说公共JS代码 end -->
+    </div>
+    {% endif %}
   </article>
 </section>
 {% endblock %}

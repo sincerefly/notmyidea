@@ -6,9 +6,11 @@ This Theme base on Pelican's default theme
 
 https://blog.yasking.org
 
-### 特点
+### Changelog
 
-- 支持多说, 畅言评论
+- 优化 Tags 页的展示
+- 添加 Social 展示的 E-mail 图标
+- 添加多说, 畅言评论支持
 
 
 ### 配置

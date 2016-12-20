@@ -84,8 +84,11 @@ ol {
 	margin: 0em 0 0 1.5em;
 }
 
-li { margin-top: 0.5em;
-     margin-bottom: 1em; }
+li {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  list-style: none;
+}
 
 .post-info {
     float:right;
@@ -454,3 +457,12 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
+
+
+.column-4 {
+  columns: 4;
+  column-rule: 1px dashed #ccc;
+}
+
+
+

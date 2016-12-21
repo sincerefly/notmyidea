@@ -459,12 +459,16 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	#add-comment * {margin-bottom: .5em;}
 
 
-.column-4 {
+ul.column-4 {
   columns: 4;
   column-rule: 1px dashed #ccc;
 }
 
 dl.archives li time {
   color: #999999;
+}
+
+dl.archives li a {
+  margin-left: 1rem;
 }
 

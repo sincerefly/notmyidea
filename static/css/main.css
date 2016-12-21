@@ -464,5 +464,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
   column-rule: 1px dashed #ccc;
 }
 
-
+dl.archives li time {
+  color: #999999;
+}
 

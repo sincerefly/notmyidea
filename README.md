@@ -8,6 +8,7 @@ https://blog.yasking.org
 
 ### Changelog
 
+- 优化 Archives 页展示
 - 优化 Tags 页的展示
 - 添加 Social 展示的 E-mail 图标
 - 添加多说, 畅言评论支持

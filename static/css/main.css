@@ -460,7 +460,11 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 
 ul.column-4 {
-  columns: 4;
+  -moz-column-count: 4;
+  -webkit-columns: 4;
+  columns-count: 4;
+  -moz-column-rule: 1px dashed #ccc;
+  -webkit-column-rule: 1px dashed #ccc;
   column-rule: 1px dashed #ccc;
 }
 
